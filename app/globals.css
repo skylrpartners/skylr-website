@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  /* SKYLR core brand */
+  --navy: #2B3E50;
+  --lime: #C1FF72;
+
+  /* Dark surface palette (marketing site is dark-mode only) */
+  --bg: #1E1E1E;
+  --bg-elevated: #262626;
+  --bg-card: #2A2A2A;
+
+  /* Text on dark */
+  --text-primary: #f5faf8;
+  --text-secondary: #a8b0ba;
+  --text-muted: #9ca3af;
+}
+
+@theme inline {
+  /* Colors — exposed as Tailwind utilities (bg-navy, text-lime, etc.) */
+  --color-navy: var(--navy);
+  --color-lime: var(--lime);
+  --color-bg: var(--bg);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-bg-card: var(--bg-card);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  /* Fonts — wired to next/font CSS variables */
+  --font-display: var(--font-jakarta);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-mono);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
