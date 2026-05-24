@@ -1,10 +1,10 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-const VALID_PASSWORDS = [
-  "SkylrPartners2026!",
-  "gcp-review-2026",
-];
+const VALID_PASSWORDS = (process.env.ACCESS_PASSWORDS || '')
+  .split(',')
+  .map(p => p.trim())
+  .filter(Boolean);
 
 const ONE_WEEK_SECONDS = 60 * 60 * 24 * 7;
 

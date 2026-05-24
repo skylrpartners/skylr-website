@@ -1,10 +1,10 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-const VALID_PASSWORDS = [
-  "SkylrPartners2026!", // existing stealth password
-  "gcp-review-2026",    // new password for GCP reviewers
-];
+const VALID_PASSWORDS = (process.env.ACCESS_PASSWORDS || '')
+  .split(',')
+  .map(p => p.trim())
+  .filter(Boolean);
 
 export function proxy(request: NextRequest) {
   const path = request.nextUrl.pathname;
