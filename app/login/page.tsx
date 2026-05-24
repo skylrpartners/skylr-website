@@ -127,8 +127,8 @@ export default async function LoginPage({
           className="mt-6"
           style={{
             fontFamily: "var(--font-mono)",
-            fontSize: 11,
-            color: "var(--text-muted)",
+            fontSize: "var(--meta-size)",
+            color: "var(--text-secondary)",
             letterSpacing: "0.04em",
           }}
         >
