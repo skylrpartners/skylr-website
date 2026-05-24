@@ -1,15 +1,29 @@
+import CaseStudies from "@/components/sections/case-studies";
+import CTA from "@/components/sections/cta";
+import Footer from "@/components/sections/footer";
+import Hero from "@/components/sections/hero";
+import Nav from "@/components/sections/nav";
+import Pillars from "@/components/sections/pillars";
+import Problem from "@/components/sections/problem";
+import Security from "@/components/sections/security";
+import Team from "@/components/sections/team";
+import Testimonials from "@/components/sections/testimonials";
+
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-6 text-center bg-bg">
-      <p className="font-mono text-xs uppercase tracking-[0.2em] text-lime mb-6">
-        Phase 0 scaffold
-      </p>
-      <h1 className="font-display font-bold text-white text-6xl sm:text-7xl tracking-tight">
-        SKYLR
-      </h1>
-      <p className="font-sans text-text-muted mt-4 text-base sm:text-lg">
-        Coming soon.
-      </p>
-    </main>
+    <>
+      <Nav />
+      <main>
+        <Hero />
+        <Problem />
+        <Pillars />
+        <CaseStudies />
+        <Team />
+        <Testimonials />
+        <Security />
+        <CTA />
+      </main>
+      <Footer />
+    </>
   );
 }

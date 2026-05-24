@@ -3,38 +3,75 @@
 :root {
   /* SKYLR core brand */
   --navy: #2B3E50;
+  --navy-light: #3a5268;
   --lime: #C1FF72;
+  --lime-soft: rgba(193, 255, 114, 0.12);
+  --lime-line: rgba(193, 255, 114, 0.3);
 
   /* Dark surface palette (marketing site is dark-mode only) */
   --bg: #1E1E1E;
   --bg-elevated: #262626;
   --bg-card: #2A2A2A;
 
-  /* Text on dark */
-  --text-primary: #f5faf8;
-  --text-secondary: #a8b0ba;
-  --text-muted: #9ca3af;
+  /* Borders */
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.15);
+
+  /* Text hierarchy on dark */
+  --text-primary: #F5F7FA;
+  --text-secondary: rgba(255, 255, 255, 0.72);
+  --text-muted: rgba(255, 255, 255, 0.5);
+  --text-dim: rgba(255, 255, 255, 0.32);
+
+  /* Status */
+  --danger: #FF8A8A;
 }
 
 @theme inline {
   /* Colors — exposed as Tailwind utilities (bg-navy, text-lime, etc.) */
   --color-navy: var(--navy);
+  --color-navy-light: var(--navy-light);
   --color-lime: var(--lime);
+  --color-lime-soft: var(--lime-soft);
+  --color-lime-line: var(--lime-line);
   --color-bg: var(--bg);
   --color-bg-elevated: var(--bg-elevated);
   --color-bg-card: var(--bg-card);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
   --color-text-muted: var(--text-muted);
+  --color-text-dim: var(--text-dim);
+  --color-danger: var(--danger);
 
   /* Fonts — wired to next/font CSS variables */
   --font-display: var(--font-jakarta);
   --font-sans: var(--font-inter);
   --font-mono: var(--font-mono);
+
+  /* Size token for small uppercase/mono metadata labels (credibility bar,
+     footnotes, pillar app taglines, testimonial attribution). Color for
+     these labels is var(--text-secondary). Defined here (not in :root)
+     because Tailwind v4 prunes :root variables not declared in @theme. */
+  --meta-size: 13px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--bg);
   color: var(--text-primary);
   font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }

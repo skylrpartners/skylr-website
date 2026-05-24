@@ -21,8 +21,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SKYLR Partners",
-  description: "SKYLR Partners — Revenue operations platform",
+  title: "SKYLR OS — The AI-native operating system for revenue growth",
+  description:
+    "SKYLR OS is the AI-native operating system for revenue growth. Agentic AI for diagnostics, AI-native planning and governance, and a growing suite of GTM tools — built for $50M–$1B+ companies.",
 };
 
 export default function RootLayout({
