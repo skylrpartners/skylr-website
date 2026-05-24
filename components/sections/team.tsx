@@ -38,9 +38,9 @@ const founders: Founder[] = [
     headline:
       "Former COO of a SaaS unicorn; scaled Amazon Associates from $10B to $30B+ — now architecting the technology and AI layer of SKYLR OS",
     bullets: [
-      "Scaled Amazon Associates 3x to $30B+ across 20 countries; Influencer Program $0 to $500M+; Promo Codes $0 to $500M+",
+      "Scaled Amazon Associates 3x from $10B to $30B+ across 20 countries; Influencer Program $0 to $500M+; Promo Codes $0 to $500M+",
       "Grew partnerships marketplace GMV at Impact Tech from $30B to $40B+",
-      "Key driver of Microsoft Security revenue from $200M to $705M through strategy, planning and business development",
+      "Key driver of Microsoft Security revenue growth from $200M to $705M through strategy, planning and business development",
       "MS EECS MIT. MBA MIT Sloan. BCG",
     ],
     pills: ["Amazon", "Microsoft", "Impact Tech", "BCG", "MIT"],
