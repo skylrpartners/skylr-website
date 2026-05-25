@@ -28,7 +28,7 @@ export default function Footer() {
             · doing business as SKYLR Partners · All rights reserved.
             <br />
             Revenue Forensics™, Revenue Blueprint™, and Revenue Velocity™ are
-            trademarks of SKYLR LLC.
+            proprietary methodologies of SKYLR Partners.
           </div>
           <div
             className="flex"

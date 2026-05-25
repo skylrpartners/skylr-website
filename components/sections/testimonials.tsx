@@ -15,7 +15,7 @@ const quotes = [
   {
     quote:
       "SKYLR has been a true business partner. Every project delivered actionable insights with measurable impact on our revenue performance.",
-    attr: "CEO · $200M+ B2B Services Company",
+    attr: "CEO · B2B Services Company",
   },
   {
     quote:
