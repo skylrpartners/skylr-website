@@ -19,10 +19,7 @@ export default function Hero() {
         }}
       />
       <Container>
-        <div
-          className="relative grid items-center gap-[72px] max-[960px]:grid-cols-1 max-[960px]:gap-12"
-          style={{ gridTemplateColumns: "1.1fr 0.9fr" }}
-        >
+        <div className="relative grid items-center grid-cols-[1.1fr_0.9fr] gap-[72px] max-[960px]:grid-cols-1 max-[960px]:gap-12">
           <div>
             <div
               className="inline-flex items-center gap-[10px] mb-7"
