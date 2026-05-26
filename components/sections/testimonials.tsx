@@ -15,7 +15,7 @@ const quotes = [
   {
     quote:
       "SKYLR has been a true business partner. Every project delivered actionable insights with measurable impact on our revenue performance.",
-    attr: "CEO · B2B Services Company",
+    attr: "Founder & CEO · B2B Services Company",
   },
   {
     quote:
@@ -25,7 +25,7 @@ const quotes = [
   {
     quote:
       "SKYLR didn't just give us tools — they expanded how our leadership team thinks about revenue. The frameworks we built together are still running our business today.",
-    attr: "President · Mid-Market SaaS Company",
+    attr: "Chief Operating Officer · Mid-Market SaaS Company",
   },
 ];
 
